@@ -18,14 +18,15 @@ export default function DrinkDetails(){
     //eslint-disable-next-line
   },[])
   return (
-    <Card>
+    <Card sx={{width: 1/2,}}>
       <CardHeader
       title={drinkDetail.strDrink}
       subheader={drinkDetail.strAlcoholic}
       />
       <CardMedia
       component="img"
-      height="200"
+      height="300"
+      width=""
       image={drinkDetail.strDrinkThumb}
       alt={drinkDetail.strDrink}
       />
