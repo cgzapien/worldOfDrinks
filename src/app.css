@@ -11,14 +11,12 @@ body {
   text-align: center;
   border-radius: 4px;
   border: 2px solid;
-  width: max-content;
+  margin-top: 10px;
   padding: 20px;
 }
 .paginationBtns {
   display: flex;
   list-style: none;
-  width: 80%;
-  height: 40px;
   justify-content: center;
 }
 .paginationBtns a {
@@ -33,4 +31,14 @@ body {
 }
 .paginationActive a {
   background-color: blue;
+}
+.imageList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 700px) {
+  .paginationBtns {
+    width: 50px;
+    margin: auto;
+  }
 }

@@ -7,10 +7,10 @@ export default function NavBar(){
     <div className="navBar">
       <AppBar position="static" >
         <Toolbar className="appbar">
-          <Link to="/"><Button variant="text" style={{color: "white", textDecoration: "none"}}>Home</Button></Link>
-          <Link to="/alcoholic"><Button style={{color: "black"}}>Alcoholic Drinks</Button></Link>
-          <Link to="/non-alcoholic"><Button style={{color: "black"}}>Non-Alcoholic Drinks</Button></Link>
-          <Link to="/search"><Button color="inherit">Search</Button></Link>
+          <Link to="/"><Button variant="text" style={{color: "#ffffff", textDecoration: "underline"}}>Home</Button></Link>
+          <Link to="/alcoholic"><Button style={{color: "#ffffff", textDecoration: "underline"}}>Alcoholic Drinks</Button></Link>
+          <Link to="/non-alcoholic"><Button style={{color: "#ffffff", textDecoration: "underline"}}>Non-Alcoholic Drinks</Button></Link>
+          <Link to="/search"><Button style={{color: "#ffffff", textDecoration: "underline"}}>Search</Button></Link>
         </Toolbar>
       </AppBar>
     </div>

@@ -13,9 +13,10 @@ export default function AlcoholicDrinks(){
   const displayDrinks = alcoholicDrinks.slice(pagesVisited, pagesVisited + drinksPerPage).map(drink => {
     return (
         <Link to={`/drink/${drink.idDrink}`} key={drink.idDrink}>
-        <ImageListItem >
+        <ImageListItem variant="masonry">
             
           <img
+            className="drinkImage"
             style={{borderRadius: "4px", margin: "auto"}}
             src={`${drink.strDrinkThumb}?w=248&fit=crop&auto=format`}
             srcSet={`${drink.strDrinkThumb}?w=248&fit=crop&auto=format&dpr=2 2x`}
@@ -35,7 +36,7 @@ export default function AlcoholicDrinks(){
   return (
     <Box sx={{ padding: "10px", height: "100vh" }}>
     <Typography variant="h2" style={{textAlign: "center"}}>Alcoholic Drinks</Typography>
-    <ImageList variant="masonry" cols={3} gap={8}>
+    <ImageList  gap={8} className="imageList">
       {/* {alcoholicDrinks.map((drink) => (
         <Link to={`/drink/${drink.idDrink}`} key={drink.idDrink}>
         <ImageListItem >
@@ -54,7 +55,7 @@ export default function AlcoholicDrinks(){
       {displayDrinks}
     </ImageList>
     <ReactPaginate
-      previousLabel={"previous"}
+      previousLabel="previous"
       nextLabel={"next"}
       breakLabel={"..."}
       pageCount={pageCount}
@@ -66,7 +67,6 @@ export default function AlcoholicDrinks(){
       nextLinkClassName={"nextBtn"}
       disabledClassName={"paginationDisabled"}
       activeClassName={"paginationActive"}
-
     />
   </Box>
 );

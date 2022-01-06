@@ -33,7 +33,7 @@ export default function NonAlcoholicDrinks(){
   return (
     <Box sx={{ padding: "10px", height: "100vh" }}>
     <Typography variant="h2" style={{textAlign: "center"}}>Non-Alcoholic Drinks</Typography>
-    <ImageList variant="masonry" cols={3} gap={8}>
+    <ImageList variant="masonry" className="imageList" gap={8}>
       {/* {nonAlcoholicDrinks.map((drink) => (
         <Link to={`/drink/${drink.idDrink}`} key={drink.idDrink}>
           <ImageListItem key={drink.idDrink}>
@@ -55,8 +55,8 @@ export default function NonAlcoholicDrinks(){
       nextLabel={"next"}
       breakLabel={"..."}
       pageCount={pageCount}
-      marginPagesDisplayed={5}
-      pageRangeDisplayed={3}
+      marginPagesDisplayed={3}
+      pageRangeDisplayed={5}
       onPageChange={changePage}
       containerClassName={"paginationBtns"}
       previousLinkClassName={"previousBtn"}
