@@ -23,7 +23,7 @@ export default function AlcoholicDrinks(){
             alt={drink.strDrink}
             // loading="lazy"
             />
-          <ImageListItemBar title={drink.strDrink} />
+          <ImageListItemBar title={drink.strDrink} style={{textAlign: "center"}}/>
         </ImageListItem>
             </Link>
     )
@@ -37,21 +37,6 @@ export default function AlcoholicDrinks(){
     <Box sx={{ padding: "10px", height: "100vh" }}>
     <Typography variant="h2" style={{textAlign: "center"}}>Alcoholic Drinks</Typography>
     <ImageList  gap={8} className="imageList">
-      {/* {alcoholicDrinks.map((drink) => (
-        <Link to={`/drink/${drink.idDrink}`} key={drink.idDrink}>
-        <ImageListItem >
-            
-          <img
-            style={{borderRadius: "4px", margin: "auto"}}
-            src={`${drink.strDrinkThumb}?w=248&fit=crop&auto=format`}
-            srcSet={`${drink.strDrinkThumb}?w=248&fit=crop&auto=format&dpr=2 2x`}
-            alt={drink.strDrink}
-            // loading="lazy"
-            />
-          <ImageListItemBar title={drink.strDrink} />
-        </ImageListItem>
-            </Link>
-      ))} */}
       {displayDrinks}
     </ImageList>
     <ReactPaginate

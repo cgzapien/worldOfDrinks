@@ -20,7 +20,7 @@ export default function NonAlcoholicDrinks(){
               alt={drink.strDrink}
               loading="lazy"
               />
-            <ImageListItemBar title={drink.strDrink} />
+            <ImageListItemBar title={drink.strDrink} style={{textAlign: "center"}} />
           </ImageListItem>
         </Link>
     )

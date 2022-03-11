@@ -31,7 +31,7 @@ export default function Search(){
   }, [search])
   return (
     <div>
-      <Box>
+      <Box style={{textAlign: "center", marginTop: "20px"}}>
         <TextField
         label="Search by name"
         variant="outlined"
@@ -40,7 +40,7 @@ export default function Search(){
         />
       </Box>
       <Box>
-        <Typography>your search results here</Typography>
+        <Typography style={{textTransform: "uppercase", textAlign: "center", marginTop: "5px"}}>your search results here</Typography>
         <ImageList variant="masonry" className="imageList" gap={8}>
           {filtered.map(drink => {
             return (
@@ -53,7 +53,7 @@ export default function Search(){
                   alt={drink.strDrink}
                   loading="lazy"
                   />
-                <ImageListItemBar title={drink.strDrink} />
+                <ImageListItemBar title={drink.strDrink} style={{textAlign: "center"}}/>
               </ImageListItem>
             </Link>
             )
