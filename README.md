@@ -1,6 +1,6 @@
 # World of Drinks App
 
-A web application where users can search alcoholic and non-alcoholic beverages: learn details about them, how to prepare them and what ingredients are needed in order to make them. I created this application using The Cocktail Databse API. Deployed using Heroku.
+World of Drinks ia a web application that provides users with information regarding alcoholic and non-alcoholic beverages. You can learn details about them, how to prepare them and what ingredients are needed in order to make them. I created this application using The Cocktail Database API and deployed it using Heroku.
 
 https://worldofdrinks.herokuapp.com/
 
